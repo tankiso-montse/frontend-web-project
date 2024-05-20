@@ -30,12 +30,41 @@ nav ul li a:hover {
   background-color: rgb(222, 188, 188);
 }
 
+.dropdown-toggle {
+  display: none;
+}
+
+
+
+/* @media screen and (max-width: 850px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(239, 237, 224);
+  }
+  
+  .menu li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .dropdown-toggle {
+    display: block;
+  }
+} */
+
 .portfolio-name {
   padding-left: 1em;
 }
 
 .container {
-  background-color: rgb(178, 148, 148);
+  /* background-color: rgb(178, 148, 148); */
+  background-color: rgb(155 139 123);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +79,14 @@ nav ul li a:hover {
   /* Elements will be displayed horizontally */
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .container .text-info {
@@ -91,7 +128,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.text-info button:hover {
+.text-info #contact-btn:hover {
   background-color: rgb(222, 188, 188);
 }
 
@@ -115,5 +152,14 @@ p {
 
 #modal-form textarea {
   width: 90%;
-  height: 15vh;
+  height: 10vh;
 }
+
+#submit-btn:hover {
+  background-color: rgb(77, 182, 66);
+}
+
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    */

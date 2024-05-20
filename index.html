@@ -11,7 +11,7 @@
     <div class="nav-menu">
       <h1 class="portfolio-name">Marina Katarov</h1>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#topics">Topics</a></li>
@@ -19,6 +19,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="dropdown-toggle">Menu</button>
       </nav>
     </div>
     <div class="container">
@@ -40,7 +41,7 @@
           <button id="contact-btn">Contact Me</button>
           <!-- <div class="form-popup" id="contact-form"> -->
             <dialog id="modal-form">
-              <form method="dialog" action="">
+              <form id="contact-form"="dialog" action="">
                 <label for="fname-lname">Full Name</label><br />
                 <input
                   type="text"
@@ -67,8 +68,9 @@
                   placeholder="Service enquiry"
                 ></textarea>
                 <br /><br />
-                <button class="submit-btn" type="submit">submit</button>
+                <button id="submit-btn" type="submit">submit</button>
               </form>
+              <p id="submission-message" style="display:none;">Form submitted successfully!</p>
             </dialog>
           </div>
         </div>
