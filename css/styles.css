@@ -98,6 +98,12 @@ nav ul li a:hover {
   /* margin-bottom: 400px; */
 }
 
+.about-container p {
+  margin-left: 2em;
+  margin-right: 20em;
+}
+
+
 .text-info button {
   padding: 20px;
   /* margin: 10px; */
@@ -153,9 +159,6 @@ section {
   cursor: pointer;
 }
 
-.about-container p {
-  margin-left: 2em;
-}
 
 
 @media screen and (max-width: 1027px) {
@@ -168,6 +171,7 @@ section {
 
   nav ul li {
     font-size: 14px;
+    padding-left: 3em;
   }
 
   .nav-menu .portfolio-name {
@@ -205,4 +209,11 @@ section {
     display: flex;
   }
 
+}
+
+@media screen and (max-width: 860px) {
+  .about-container p {
+    margin-right: 1em;
+  }
+  
 }
