@@ -78,10 +78,8 @@ nav ul li a:hover {
 
 .about-container img {
   max-width: 100%;
-  height: 80vh;
+  height: 60vh;
 }
-
-
 
 .container h1 {
   margin-bottom: 5px;
@@ -174,7 +172,7 @@ section {
   .nav-menu .portfolio-name {
     font-size: 30px;
   }
-  
+
   .container .text-info {
     padding-left: 1em;
   }
@@ -182,7 +180,7 @@ section {
   .container img {
     margin-right: 3em;
   }
-  
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -191,7 +189,8 @@ section {
     flex-direction: column;
     background-color: rgba(239, 237, 224);
     position: absolute;
-    top: 60px; /* Adjust this to the height of your nav-menu */
+    top: 60px;
+    /* Adjust this to the height of your nav-menu */
     right: 0;
     width: 200px;
   }
