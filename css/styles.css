@@ -18,11 +18,16 @@ body {
 
 }
 
+.nav-menu .portfolio-name {
+  font-size: 2em;
+}
+
 nav ul li {
   list-style-type: none;
   display: inline-block;
   margin-right: 12px;
   padding: 12px;
+  font-size: 1em;
 
 }
 
@@ -34,29 +39,6 @@ nav ul li a:hover {
   display: none;
 }
 
-
-
-/* @media screen and (max-width: 850px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(239, 237, 224);
-  }
-  
-  .menu li {
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .dropdown-toggle {
-    display: block;
-  }
-} */
 
 .portfolio-name {
   padding-left: 1em;
@@ -81,17 +63,10 @@ nav ul li a:hover {
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .container .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
+
 
 .container .text-info {
-  /* border: 1em solid rgb(205, 113, 37); */
-  /* align-items: center; */
+  margin-right: 3em;
 }
 
 .container img {
@@ -137,6 +112,11 @@ p {
   color: rgb(0, 0, 0);
 }
 
+section {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 
 #modal-form {
   width: 20%;
@@ -159,7 +139,58 @@ p {
   background-color: rgb(77, 182, 66);
 }
 
+.menu-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 2em;
+  cursor: pointer;
+}
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    */
+
+@media screen and (max-width: 1027px) {
+  .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  nav ul li {
+    font-size: 14px;
+  }
+
+  .nav-menu .portfolio-name {
+    font-size: 30px;
+  }
+  
+  .container .text-info {
+    padding-left: 1em;
+  }
+
+  .container img {
+    margin-right: 3em;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(239, 237, 224);
+    position: absolute;
+    top: 60px; /* Adjust this to the height of your nav-menu */
+    right: 0;
+    width: 200px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu.show-menu nav ul {
+    display: flex;
+  }
+
+}
