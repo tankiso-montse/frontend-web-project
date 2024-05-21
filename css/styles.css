@@ -88,6 +88,7 @@ nav ul li a:hover {
 .about-container h1 {
   margin-bottom: 5px;
   margin-left: 1em;
+  margin-right: 2em;
 }
 
 .container p {
@@ -179,6 +180,7 @@ section {
 
   .container img {
     margin-right: 3em;
+    margin-left: 2em;
   }
 
 }
