@@ -76,13 +76,20 @@ nav ul li a:hover {
   margin-left: 12em;
 }
 
+.about-container img {
+  max-width: 100%;
+  height: 80vh;
+}
+
+
 
 .container h1 {
-  /* border: 1em solid maroon; */
   margin-bottom: 5px;
-  /* padding: 3em; */
-  /* margin-right: 200px; */
+}
 
+.about-container h1 {
+  margin-bottom: 5px;
+  margin-left: 1em;
 }
 
 .container p {
@@ -145,6 +152,10 @@ section {
   height: 30px;
   margin-right: 2em;
   cursor: pointer;
+}
+
+.about-container p {
+  margin-left: 2em;
 }
 
 

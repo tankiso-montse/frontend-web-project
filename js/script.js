@@ -4,6 +4,10 @@ const closeModal = document.getElementById("submit-btn");
 var submissionMessage = document.getElementById("submission-message");
 const form = document.getElementById("contact-form");
 
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('show-menu');
+});
 openModal.addEventListener("click", () => {
   modal.showModal();
   console.log("showing modal");
@@ -20,8 +24,4 @@ closeModal.addEventListener("click", (event) => {
   }
   
   
-});
-
-document.getElementById('menu-icon').addEventListener('click', function() {
-  document.querySelector('.nav-menu').classList.toggle('show-menu');
 });
