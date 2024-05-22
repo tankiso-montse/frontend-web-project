@@ -14,8 +14,6 @@ body {
   top: 0;
   width: 100vw;
   background-color: rgba(239, 237, 224);
-  /* border: 1em solid #f00; */
-
 }
 
 .nav-menu .portfolio-name {
@@ -57,20 +55,15 @@ nav ul li:hover a {
 }
 
 .container {
-  /* background-color: rgb(178, 148, 148); */
   background-color: rgb(155 139 123);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2em solid #0f0; */
-
 }
 
 .container .content {
   display: flex;
-  /* Nested flex container */
   flex-direction: row;
-  /* Elements will be displayed horizontally */
   justify-content: space-between;
   align-items: center;
 }
@@ -84,7 +77,6 @@ nav ul li:hover a {
 .container img {
   max-width: 100%;
   height: 80vh;
-  /* border: 1em solid #ff0; */
   margin-left: 12em;
 }
 
@@ -104,10 +96,7 @@ nav ul li:hover a {
 }
 
 .container p {
-  /* border: 1em solid maroon; */
   margin-top: 5px;
-  /* margin-right: 200px; */
-  /* margin-bottom: 400px; */
 }
 
 .about-container p {
@@ -125,7 +114,7 @@ nav ul li:hover a {
   color: rgb(0, 0, 0);
   cursor: pointer;
   border-radius: 5px;
-} 
+}
 
 
 
@@ -149,7 +138,6 @@ section {
   height: 40vh;
   background-color: rgb(150, 145, 145);
   border-radius: 10px;
-  /* z-index: 100; */
 }
 
 #modal-form input {
@@ -181,7 +169,8 @@ section {
   color: #fff;
 }
 
-#submit-btn::before, #submit-btn::after {
+#submit-btn::before,
+#submit-btn::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -207,7 +196,8 @@ section {
   transform: scale(1);
 }
 
-#submit-btn:active, #contact-btn:active {
+#submit-btn:active,
+#contact-btn:active {
   transform: translateY(2px);
 }
 
@@ -245,7 +235,6 @@ section {
   nav ul {
     display: none;
     flex-direction: column;
-    /* background-color: rgba(239, 237, 224); */
     position: absolute;
     top: 60px;
     right: 0;
@@ -270,5 +259,5 @@ section {
   .about-container p {
     margin-right: 1em;
   }
-  
+
 }
