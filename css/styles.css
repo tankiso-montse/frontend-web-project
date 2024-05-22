@@ -28,11 +28,23 @@ nav ul li {
   margin-right: 12px;
   padding: 12px;
   font-size: 1em;
+  border: 2px solid rgb(132, 117, 117);
+  border-radius: 3px;
+  color: black;
 
 }
 
-nav ul li a:hover {
-  background-color: rgb(222, 188, 188);
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: rgb(202, 199, 181);
+}
+
+nav ul li:hover a {
+  color: rgb(0, 0, 0);
 }
 
 .dropdown-toggle {
@@ -104,19 +116,22 @@ nav ul li a:hover {
 }
 
 
-.text-info button {
+#contact-btn {
   padding: 20px;
-  /* margin: 10px; */
+  margin: 10px;
   background-color: rgb(178, 148, 148);
   border: 1px solid white;
   background-color: white;
   color: rgb(0, 0, 0);
   cursor: pointer;
   border-radius: 5px;
-}
+} 
 
-.text-info #contact-btn:hover {
-  background-color: rgb(222, 188, 188);
+
+
+#contact-btn:hover {
+  /* background-color: rgb(222, 188, 188); */
+  background-color: rgb(202, 199, 181);
 }
 
 .text-info h1,
@@ -128,7 +143,6 @@ section {
   margin-left: 1em;
   margin-right: 1em;
 }
-
 
 #modal-form {
   width: 20%;
@@ -147,16 +161,54 @@ section {
   height: 10vh;
 }
 
-#submit-btn:hover {
-  background-color: rgb(77, 182, 66);
-}
-
 .menu-icon {
   display: none;
   width: 30px;
   height: 30px;
   margin-right: 2em;
   cursor: pointer;
+}
+
+#submit-btn {
+  /* background-color: #0ebac5; */
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding: 1em 2em;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  background: none;
+  color: #fff;
+}
+
+#submit-btn::before, #submit-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #0ec554;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: background 0.5s, transform 0.5s, opacity 0.5s ease-in;
+}
+
+#submit-btn::before {
+  left: -30%;
+}
+
+#submit-btn::after {
+  right: -30%;
+}
+
+#submit-btn:hover::after {
+  transform: scale(1);
+}
+
+#submit-btn:active, #contact-btn:active {
+  transform: translateY(2px);
 }
 
 
@@ -193,12 +245,15 @@ section {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: rgba(239, 237, 224);
+    /* background-color: rgba(239, 237, 224); */
     position: absolute;
     top: 60px;
-    /* Adjust this to the height of your nav-menu */
     right: 0;
     width: 200px;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(202, 199, 181);
   }
 
   .menu-icon {
